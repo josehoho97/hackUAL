@@ -44,7 +44,7 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="2" attributes="0">
                       <Component id="jTF_Usuario" alignment="2" max="32767" attributes="0"/>
                       <Component id="jL_Usuario" alignment="2" max="32767" attributes="0"/>
@@ -52,13 +52,9 @@
                       <Component id="jPasswordField1" alignment="2" min="-2" pref="332" max="-2" attributes="0"/>
                       <Component id="jB_Acceder" alignment="2" min="-2" max="-2" attributes="0"/>
                       <Component id="jL_Titulo" alignment="2" min="-2" pref="332" max="-2" attributes="0"/>
+                      <Component id="cLabel1" alignment="2" min="-2" pref="342" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="44" max="32767" attributes="0"/>
-              </Group>
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                  <Component id="cLabel1" max="32767" attributes="0"/>
-                  <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                  <EmptySpace pref="39" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -67,9 +63,9 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jL_Titulo" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="cLabel1" min="-2" pref="332" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="cLabel1" min="-2" pref="342" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                   <Component id="jL_Usuario" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jTF_Usuario" min="-2" max="-2" attributes="0"/>
@@ -86,6 +82,9 @@
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JTextField" name="jTF_Usuario">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jL_Usuario">
           <Properties>
@@ -134,15 +133,17 @@
         <Component class="javax.swing.JPasswordField" name="jPasswordField1">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="jPasswordField1"/>
           </Properties>
         </Component>
-        <Component class="CLabel" name="cLabel1">
+        <Component class="Label.CLabel" name="cLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Img/Logo.jpeg"/>
             </Property>
             <Property name="text" type="java.lang.String" value=""/>
+            <Property name="lineColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="44" red="0" type="rgb"/>
+            </Property>
           </Properties>
         </Component>
       </SubComponents>

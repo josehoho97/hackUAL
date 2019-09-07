@@ -1,5 +1,7 @@
 package Forma;
 
+import Label.CLabel;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -35,11 +37,13 @@ public class Loggin extends javax.swing.JFrame {
         jL_Titulo = new javax.swing.JLabel();
         jB_Acceder = new javax.swing.JButton();
         jPasswordField1 = new javax.swing.JPasswordField();
-        cLabel1 = new CLabel();
+        cLabel1 = new Label.CLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         Panel_Principal.setBackground(new java.awt.Color(45, 136, 45));
+
+        jTF_Usuario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jL_Usuario.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
         jL_Usuario.setForeground(new java.awt.Color(0, 68, 0));
@@ -60,38 +64,35 @@ public class Loggin extends javax.swing.JFrame {
         jB_Acceder.setText("Acceder");
 
         jPasswordField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jPasswordField1.setText("jPasswordField1");
 
         cLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Logo.jpeg"))); // NOI18N
         cLabel1.setText("");
+        cLabel1.setLineColor(new java.awt.Color(0, 68, 0));
 
         javax.swing.GroupLayout Panel_PrincipalLayout = new javax.swing.GroupLayout(Panel_Principal);
         Panel_Principal.setLayout(Panel_PrincipalLayout);
         Panel_PrincipalLayout.setHorizontalGroup(
             Panel_PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Panel_PrincipalLayout.createSequentialGroup()
-                .addGap(41, 41, 41)
+                .addGap(36, 36, 36)
                 .addGroup(Panel_PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jTF_Usuario)
                     .addComponent(jL_Usuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jL_Contraseña, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jB_Acceder)
-                    .addComponent(jL_Titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(44, Short.MAX_VALUE))
-            .addGroup(Panel_PrincipalLayout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(cLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(52, 52, 52))
+                    .addComponent(jL_Titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 342, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
         Panel_PrincipalLayout.setVerticalGroup(
             Panel_PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Panel_PrincipalLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jL_Titulo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(cLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 342, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
                 .addComponent(jL_Usuario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTF_Usuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -156,7 +157,7 @@ public class Loggin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Panel_Principal;
-    private CLabel cLabel1;
+    private Label.CLabel cLabel1;
     private javax.swing.JButton jB_Acceder;
     private javax.swing.JLabel jL_Contraseña;
     private javax.swing.JLabel jL_Titulo;
